@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juegos | Continue? Café</title>
+<meta name="description" content="Catálogo de juegos de Continue? Café: retro, peleas, cooperativos y de mesa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="nav">
+  <a class="logo" href="index.html">Continue<span class="blink">?</span></a>
+  <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">Menú</button>
+  <nav id="site-nav">
+    <a href="juegos.html" aria-current="page">Juegos</a>
+    <a href="index.html#torneos">Torneos</a>
+    <a href="index.html#carta">Carta</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a class="btn sm" href="index.html#reservar">Reservar mesa</a>
+  </nav>
+</header>
+
+<main id="contenido" class="interior">
+  <section class="page-head">
+    <h1>Todos los juegos</h1>
+    <p>Elige una zona y mira qué hay en la barra. No pagas por juego, solo lo que consumes.</p>
+  </section>
+
+  <section class="sec">
+    <div class="filtros" role="group" aria-label="Filtrar por zona">
+      <button type="button" data-zona="todos" aria-pressed="true">Todos</button>
+      <button type="button" data-zona="retro" aria-pressed="false">Retro</button>
+      <button type="button" data-zona="peleas" aria-pressed="false">Peleas</button>
+      <button type="button" data-zona="coop" aria-pressed="false">Cooperativos</button>
+      <button type="button" data-zona="mesa" aria-pressed="false">Mesa</button>
+    </div>
+    <div class="catalogo">
+      <article class="ficha" data-zona="retro"><h3>Saltos y monedas</h3><p>Plataformas clásicas para dos, en consola de 16 bits.</p><small>1 a 2 jugadores, zona Retro</small></article>
+      <article class="ficha" data-zona="retro"><h3>Carreras de karts</h3><p>Cuatro pilotos, pantalla dividida y cero amigos al final.</p><small>1 a 4 jugadores, zona Retro</small></article>
+      <article class="ficha" data-zona="retro"><h3>Bloques que caen</h3><p>Para los que dicen "una más" y se quedan una hora.</p><small>1 a 2 jugadores, zona Retro</small></article>
+      <article class="ficha" data-zona="peleas"><h3>Peleas 2D de barrio</h3><p>Combos, cancelaciones y mucha revancha.</p><small>2 jugadores, zona Peleas</small></article>
+      <article class="ficha" data-zona="peleas"><h3>Lucha de plataformas</h3><p>Hasta cuatro jugadores empujándose fuera de la pantalla.</p><small>2 a 4 jugadores, zona Peleas</small></article>
+      <article class="ficha" data-zona="peleas"><h3>Boxeo arcade</h3><p>Rondas cortas y orgullo largo.</p><small>2 jugadores, zona Peleas</small></article>
+      <article class="ficha" data-zona="coop"><h3>Cocina caótica</h3><p>Cocinar en equipo sin gritarse. Spoiler: se gritan.</p><small>2 a 4 jugadores, cooperativo</small></article>
+      <article class="ficha" data-zona="coop"><h3>Mazmorras para cuatro</h3><p>Cada quien con su rol, y alguien siempre pierde el mapa.</p><small>2 a 4 jugadores, cooperativo</small></article>
+      <article class="ficha" data-zona="coop"><h3>Rescate espacial</h3><p>Una nave, dos tripulantes y un solo botón de pánico.</p><small>2 jugadores, cooperativo</small></article>
+      <article class="ficha" data-zona="mesa"><h3>Cartas de estrategia</h3><p>Partidas de 20 minutos que terminan en una hora.</p><small>2 a 4 jugadores, juegos de mesa</small></article>
+      <article class="ficha" data-zona="mesa"><h3>Dados y tablero</h3><p>Construir, comerciar y negociar sin romper amistades.</p><small>3 a 5 jugadores, juegos de mesa</small></article>
+      <article class="ficha" data-zona="mesa"><h3>Misterio en equipo</h3><p>Un cuarto, cinco sospechosos y una pista bien escondida.</p><small>2 a 6 jugadores, juegos de mesa</small></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>Game over? Nunca.</strong>
+  <p>© 2026 Continue? Café. Proyecto de portafolio ficticio, hecho por Anthony Ramírez.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

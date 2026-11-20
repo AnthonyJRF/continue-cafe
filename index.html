@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Continue? Café, café gamer</title>
+<meta name="description" content="Café gamer con consolas retro, torneos cada semana y café de especialidad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#juegos">Saltar al contenido</a>
+
+<header class="nav">
+  <a class="logo" href="#inicio">Continue<span class="blink">?</span></a>
+  <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">Menú</button>
+  <nav id="site-nav">
+    <a href="juegos.html">Juegos</a>
+    <a href="#torneos">Torneos</a>
+    <a href="#carta">Carta</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a class="btn sm" href="#reservar">Reservar mesa</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div>
+      <h1>Inserta una moneda, quédate un rato.</h1>
+      <p class="lead">Consolas retro, torneos entre vecinos y café de verdad. Aquí nadie te apura: la partida termina cuando tú lo decides.</p>
+      <div class="actions">
+        <button class="btn" id="coin" type="button">Insertar moneda</button>
+        <a class="btn alt" href="#torneos">Ver torneos</a>
+      </div>
+      <p class="credit">Créditos: <b id="credits">00</b></p>
+    </div>
+    <div class="art">
+      <div class="screen" aria-live="off">
+        <p>Continue?</p>
+        <span id="count">9</span>
+        <small id="estado">Tienes 9 segundos para decidir.</small>
+      </div>
+      <div class="ticket t1">Mesa 4 libre</div>
+      <div class="ticket t2">Hoy 7 pm: torneo de peleas</div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+      <span>Café de especialidad ★ Torneos cada semana ★ No necesitas fichas ★ Se permiten gritos de victoria ★</span>
+    </div>
+  </div>
+
+  <section class="sec" id="juegos">
+    <h2>Elige tu juego</h2>
+    <div class="grid">
+      <article class="cart"><h3>Retro de verdad</h3><p>Consolas de los 90 con sus cartuchos originales. Sí, a veces hay que soplar.</p></article>
+      <article class="cart"><h3>Noches de peleas</h3><p>Pantalla grande, dos controles y cero piedad. La revancha va incluida.</p></article>
+      <article class="cart"><h3>Cooperativos</h3><p>Para pasar el nivel entre varios. Se aceptan gritos de ánimo.</p></article>
+      <article class="cart"><h3>Juegos de mesa</h3><p>Cartas, dados y tableros para cuando las pantallas ya cansaron. Tenemos más de 40, y alguien siempre sabe las reglas.</p></article>
+    </div>
+    <p class="mas"><a class="btn alt" href="juegos.html">Ver todos los juegos</a></p>
+  </section>
+
+  <section class="sec" id="torneos">
+    <h2>Torneos de la semana</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Día</th><th>Torneo</th><th>Premio</th></tr></thead>
+        <tbody>
+          <tr><td>Lunes</td><td>Carreras sin ítems</td><td>Un combo para dos</td></tr>
+          <tr><td>Miércoles</td><td>Noche de peleas</td><td>Taza edición jugador</td></tr>
+          <tr><td>Viernes</td><td>Retro contrarreloj</td><td>Combo y 10 créditos</td></tr>
+          <tr><td>Sábado</td><td>Cooperativo por equipos</td><td>Mesa gratis el siguiente sábado</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="carta">
+    <h2>La carta</h2>
+    <div class="split">
+      <ul class="carta">
+      <li><span>Latte Player 2<small>Espresso con leche vaporizada</small></span><i></i><b>$3.50</b></li>
+      <li><span>Espresso doble Boss Fight<small>Para los que no piensan dormir</small></span><i></i><b>$2.80</b></li>
+      <li><span>Frappé Power-Up<small>Frío, cremoso y con caramelo</small></span><i></i><b>$4.20</b></li>
+      <li><span>Nachos Co-op<small>Para compartir entre dos o tres</small></span><i></i><b>$5.90</b></li>
+      <li><span>Sándwich Save Point<small>Pollo, queso y pan tostado</small></span><i></i><b>$5.50</b></li>
+      <li><span>Brownie Vida Extra<small>Tibio, con helado de vainilla</small></span><i></i><b>$2.60</b></li>
+    </ul>
+      <svg class="taza" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+        <path fill="#1B1B1F" d="M6 0h1v2H6zM9 1h1v2H9z"/>
+        <rect x="2" y="4" width="10" height="9" fill="#1B1B1F"/>
+        <rect x="3" y="5" width="8" height="7" fill="#E63946"/>
+        <rect x="3" y="5" width="8" height="2" fill="#FFC53D"/>
+        <path fill="#1B1B1F" d="M12 6h3v1h-3zM14 7h1v3h-1zM12 10h3v1h-3z"/>
+        <rect x="1" y="13" width="12" height="1" fill="#1B1B1F"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="sec" id="reservar">
+    <h2>Guarda tu mesa</h2>
+    <div class="split">
+      <form id="reserva">
+      <label>Nombre<input id="nombre" type="text" required autocomplete="name"></label>
+      <label>Fecha<input id="fecha" type="date" required></label>
+      <label>Personas
+        <select id="personas"><option>1 a 2</option><option>3 a 4</option><option>5 a 8</option></select>
+      </label>
+      <label>Zona
+        <select id="zona"><option>Retro</option><option>Peleas</option><option>Juegos de mesa</option></select>
+      </label>
+      <button class="btn full" type="submit">Guardar partida</button>
+      <p class="full" id="msg" role="status"></p>
+    </form>
+      <aside class="horario">
+        <h3>Horario</h3>
+        <p><b>Lunes a jueves:</b> 3 pm a 11 pm</p>
+        <p><b>Viernes y sábado:</b> 3 pm a 1 am</p>
+        <p><b>Domingo:</b> 12 pm a 9 pm</p>
+        <p>Entrada libre. Reservar solo asegura tu mesa.</p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>Game over? Nunca.</strong>
+  <p>© 2026 Continue? Café. Proyecto de portafolio ficticio, hecho por Anthony Ramírez.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
